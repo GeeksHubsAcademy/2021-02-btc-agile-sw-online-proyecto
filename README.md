@@ -14,9 +14,9 @@ Avísanos por el slack del curso.
 
 ## Información
 ```
-Nombre del proyecto :
-Descripción:
-Alumno:
+Nombre del proyecto : Pruebas Unitarias y de Sistema - Curso Geekshub
+Descripción: Pruebas Unitarias con Jest ejecutadas sobre funciones básicas escritas en javascript, usando DDT en alguno de los casos. Pruebas de Sistema con Cypress sobre una aplicación en Producción usando Page Objecto Model en algunos de los casos.
+Alumno: Francisco Antonio Guerrero Sánchez
 ```
 
 ## Instalación
@@ -28,25 +28,16 @@ Alumno:
 | ts-jest | https://github.com/kulshekhar/ts-jest  | 
 
 
-## Versiones
-| Alias | Version |
-| :-------: | :------: |
-| Visual Studio Code| 1.46   | 
-| Jest | 26.0 |
-| Cypress.io | | 
-
-
 ## Línea de comandos
 ```
-npm install --save-dev jest
-npm i @types/jest
+Prerequisites       
+Installing Jest        npm install jest --save-dev
+Installing Cypress     npm install cypress --save-dev 
 
-Prerequisites       npm i -D jest typescript	
-Installing          npm i -D ts-jest @types/jest	
-Creating config     npx ts-jest config:init	
 
-[Añade más comandos necesarios]
-Running tests	    npx jest
+Running tests	    
+Running Unit Tests	        npm test
+Running System Tsts	        npx cypress run
 ```
 ## Principios SOLID
 | Principio | Fichero 
