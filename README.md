@@ -6,11 +6,9 @@
 
 ## Workflow
 ```
-Forkea el proyecto y trabaja en tu rama.
-Commitea de vez en cuando las 'features' que vayas desarrollando.
-Una vez lo creas necesario, haz un 'pull request' a la rama Master.
-Avísanos por el slack del curso.
-```
+Clona el proyecto en local y cambia a la rama franguerrero. Sigue las instrucciones de instalación y linea de comando debajo expecificadas.
+Para lanzamiento de los tests usando Github Actions ve a Actions y lanza el workflow correspondiente.
+
 
 ## Información
 ```
@@ -29,14 +27,15 @@ Alumno: Francisco Antonio Guerrero Sánchez
 ## Línea de comandos
 ```
 Prerequisites
-Cloning repository     git clone https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-proyecto.git
+Cloning repository     git clone https://github.com/franguerrerosanchez/2021-02-btc-agile-sw-online-proyecto.git
+Checkout branch        git checkout franguerrero
 Installing Jest        npm install jest --save-dev
 Installing Cypress     npm install cypress --save-dev 
 
 
 Running tests	    
 Running Unit Tests	        npm test
-Running System Tsts	        npx cypress run
+Running System Tests	    npx cypress run
 ```
 ## Principios SOLID
 | Principio | Fichero 
