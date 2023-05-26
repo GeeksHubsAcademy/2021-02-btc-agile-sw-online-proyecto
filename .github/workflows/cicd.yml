@@ -44,6 +44,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.5.0'
+      - name: Install Cypress
+        run: npm i -D cypress
 
       # Runs Cypress System Tests
       - name: Cypress run
