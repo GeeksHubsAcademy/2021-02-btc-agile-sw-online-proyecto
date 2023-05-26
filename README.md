@@ -15,22 +15,21 @@ Avísanos por el slack del curso.
 ## Información
 ```
 Nombre del proyecto : Pruebas Unitarias y de Sistema - Curso Geekshub
-Descripción: Pruebas Unitarias con Jest ejecutadas sobre funciones básicas escritas en javascript, usando DDT en alguno de los casos. Pruebas de Sistema con Cypress sobre una aplicación en Producción usando Page Objecto Model en algunos de los casos.
+Descripción: Pruebas Unitarias con Jest ejecutadas sobre funciones básicas escritas en Javascript, usando DDT en algunos de los casos. 
+Pruebas de Sistema con Cypress sobre una aplicación en Producción usando Page Objecto Model en algunos de los casos.
 Alumno: Francisco Antonio Guerrero Sánchez
 ```
 
 ## Instalación
 | Alias | URL |
 | :-------: | :------: |
-| Typescript|   https://www.typescriptlang.org/| 
-| Jest Runner |  https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner |
-| vscode-icons | https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons | 
-| ts-jest | https://github.com/kulshekhar/ts-jest  | 
+| Node|   https://www.node.org/es| 
 
 
 ## Línea de comandos
 ```
-Prerequisites       
+Prerequisites
+Cloning repository     git clone https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-proyecto.git
 Installing Jest        npm install jest --save-dev
 Installing Cypress     npm install cypress --save-dev 
 
