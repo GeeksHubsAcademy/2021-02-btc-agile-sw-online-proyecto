@@ -8,7 +8,7 @@
 ```
 Clona el proyecto en local y cambia a la rama franguerrero. Sigue las instrucciones de instalación y linea de comando debajo expecificadas.
 Para lanzamiento de los tests usando Github Actions ve a Actions y lanza el workflow correspondiente.
-
+```
 
 ## Información
 ```
