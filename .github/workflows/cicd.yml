@@ -23,7 +23,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.5.0'
-
+      - name: Install Jest
+        run: npm i -D Jest
         
       # Runs Jest Unit Tests
       - name: Unit Tests
