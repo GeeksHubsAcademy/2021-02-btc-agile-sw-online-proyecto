@@ -1,4 +1,4 @@
-# 2021-02-btc-agile-sw-online-proyecto
+# 2022-12-btc-qa-testing-online-proyecto FRAN GUERRERO
 
 <p align="center">
     <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/githubagilesoftware.jpg" >	
@@ -6,70 +6,82 @@
 
 ## Workflow
 ```
-Forkea el proyecto y trabaja en tu rama.
-Commitea de vez en cuando las 'features' que vayas desarrollando.
-Una vez lo creas necesario, haz un 'pull request' a la rama Master.
-Avísanos por el slack del curso.
+Clona el proyecto en local y cambia a la rama franguerrero. 
+Sigue las instrucciones de instalación y linea de comando debajo expecificadas.
+Para lanzamiento bajo demanda de de los tests usando Github Actions ve a Actions y lanza el workflow correspondiente (sólo rama master).
+Para el lanzamiento automática del workflow y los tests correspondientes haz algún cambio de código en el repositorio remoto.
+Para ver los resultados del workflow CI/CD, acceder a la pestaña Actions y ver el historial de ejecuciones.
 ```
 
 ## Información
 ```
-Nombre del proyecto :
-Descripción:
-Alumno:
+Nombre del proyecto : Pruebas Unitarias y de Sistema - Curso Geekshub
+Descripción: Pruebas Unitarias con Jest ejecutadas sobre funciones básicas escritas en Javascript, usando DDT en algunos de los casos. 
+Pruebas de Sistema con Cypress sobre una aplicación en Producción usando Page Objecto Model en algunos de los casos.
+Alumno: Francisco Antonio Guerrero Sánchez
 ```
 
 ## Instalación
 | Alias | URL |
 | :-------: | :------: |
-| Typescript|   https://www.typescriptlang.org/| 
-| Jest Runner |  https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner |
-| vscode-icons | https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons | 
-| ts-jest | https://github.com/kulshekhar/ts-jest  | 
-
-
-## Versiones
-| Alias | Version |
-| :-------: | :------: |
-| Visual Studio Code| 1.46   | 
-| Jest | 26.0 |
-| Cypress.io | | 
+| Node|   https://www.node.org/es| 
 
 
 ## Línea de comandos
 ```
-npm install --save-dev jest
-npm i @types/jest
+Prerequisites
+Cloning repository     git clone https://github.com/franguerrerosanchez/2021-02-btc-agile-sw-online-proyecto.git
+Checkout to branch     git checkout franguerrero
+Installing Jest        npm install jest --save-dev
+Installing Cypress     npm install cypress --save-dev 
 
-Prerequisites       npm i -D jest typescript	
-Installing          npm i -D ts-jest @types/jest	
-Creating config     npx ts-jest config:init	
 
-[Añade más comandos necesarios]
-Running tests	    npx jest
+Running tests	    
+Running Unit Tests	       npm test
+Running System Tests	   npx cypress run
 ```
 ## Principios SOLID
 | Principio | Fichero 
 | :-------: | :------: |
-| ... | ...  |
-| ... | ...  |
-| ... | ...  |
+| Principio de Responsabilidad Única (SRP) | login.js, main.js, etc  |
+El uso de Page Object Model consiste en crear una única clase por página a testear que incluya los elementos con los que interactuaremos y las funciones (acciones) que realizaremos sobre ellos.
+| Principio de Segregación de la Interface (ISP) | login.js, main.js, etc  |
+Cuando empleamos el SRP también empleamos el ISP como efecto colateral. Cada Page Object contendrá SÓLO las funciones necesarias para las pruebas, ampliándolas cuando sea necesario.
 
 ## Patrones
-| Patrón | Fichero | Método
-| :-------: | :------: |:------: |
-| ... | ...  |... |
-| ... | ...  |... |
-| ... | ...  |... |
+| Patrón | Fichero
+| :-------: | :------: |
+| Page Object Model | login.js, main.js, etc |
 
 ## Refactors
-| Refactor | Fichero | Método
-| :-------: | :------: |:------: |
-| ... | ...  |... |
-| ... | ...  |... |
-| ... | ...  |... |
+| Refactor | Fichero 
+| :-------: | :------: |
+| Separate Domain From Presentation | login.js, main.js, etc  |
+Los tests de sistemas se pueden hacer sin usar Page Object Model, pero si refactorizamos y hacemos uso de ellos podemos reutilizar acciones repetidas en nuestros tests haciendo el código más matenible.
+| Making Method Calls Simpler | login.js, main.js, etc  |
+Los nombre de las funciones declaradas en el Page Object hace referencia a la acción del usuario lo cual facilitar su lectura y la programación de las pruebas. Por ejemplo "ClickLoginButton".
+| Organizing Data | sumaDDT.test.js, loginPO.cy.js  |
+En las pruebas unitarias hacer DDT (Data Driven Testing) es una forma de repetir el mismo tests con diferentes datos sin repetirlo. 
+En las pruebas de sistema usar beforeEach dentro del describe te permite realizar acciones repetidas en todos los tests sin tener que escribirlas en cada uno de ellos.
 
 ## Notas
 ```
-Ponga aquí cualquier tipo de mensaje necesario.
+Este proyecto consta de tres partes diferenciadas:
+- Pruebas Unitarias
+- Pruebas de Sistema
+- Workflow para CI/CD
+
+Para las pruebas unitarias se ha creado:
+- Clases a testear dentro de la carpeta "utils"
+- Pruebas Unitarias usando Jest en la carpeta "__test__"
+- Pruebas Unitarias usando DDT como refactorización para evitar repeticiones: "sumaDDT.test.js`
+
+Para las pruebas de sistema se ha creado:
+- Pruebas usando Cypress sobre una web ya existente "login.cy.js"
+- Page Object Models (Clases) para abstraer los elementos y las acciones (funciones) que se pueden realizar en cada página. Carpeta "page-objects
+- Pruebas usando Cypress y usando los Page Object Model citados previamente "loginPO:cy.js, shifting_contentPO.cy.js
+
+Para la parte CI/CD se ha creado un workflow ".github/worfkflows" con dos jobs:
+- Un job ejecuta en una imagen los tests unitarios.
+- El otro job ejecuta en una imagen las pruebas de sistema de forma paralela a las unitarias.
 ```
