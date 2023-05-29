@@ -1,4 +1,4 @@
-# 2021-02-btc-agile-sw-online-proyecto FRAN GUERRERO
+# 2022-12-btc-qa-testing-online-proyecto FRAN GUERRERO
 
 <p align="center">
     <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/githubagilesoftware.jpg" >	
