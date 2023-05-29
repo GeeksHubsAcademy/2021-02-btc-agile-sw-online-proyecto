@@ -1,4 +1,4 @@
-# 2021-02-btc-agile-sw-online-proyecto
+# 2021-02-btc-agile-sw-online-proyecto FRAN GUERRERO
 
 <p align="center">
     <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/githubagilesoftware.jpg" >	
