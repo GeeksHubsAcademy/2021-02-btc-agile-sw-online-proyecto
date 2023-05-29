@@ -49,6 +49,7 @@ Cuando empleamos el SRP también empleamos el ISP como efecto colateral. Cada Pa
 
 ## Patrones
 | Patrón | Fichero
+| :-------: | :------: |
 | Page Object Model | login.js, main.js, etc |
 
 ## Refactors
