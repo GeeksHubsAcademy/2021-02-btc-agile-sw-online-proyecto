@@ -8,9 +8,8 @@
 ```
 Clona el proyecto en local y cambia a la rama franguerrero. 
 Sigue las instrucciones de instalación y linea de comando debajo expecificadas.
-Para lanzamiento bajo demanda de de los tests usando Github Actions ve a Actions y:
-- lanza el workflow correspondiente.
-Para el lanzamiento automática del workflow y los tests correspondiente haz algún cambio de código en el repositorio remoto.
+Para lanzamiento bajo demanda de de los tests usando Github Actions ve a Actions y lanza el workflow correspondiente (sólo rama master).
+Para el lanzamiento automática del workflow y los tests correspondientes haz algún cambio de código en el repositorio remoto.
 ```
 
 ## Información
